@@ -1,0 +1,59 @@
+Operators:-
+**************
+- Operators is a special type of symbols used to perform some operations on operands.
+ex - 10(operand1) +(operator) 20(operand2)
+
+- unary
+- binary
+- ternary(operand1 ? operand2 : operand3)
+
+1.arithmatic Operators
+2.assignment operator
+3.relational operator
+4.logical operator
+
+1.arithmatic Operators:-
+- addition
+- substraction
+- multiplication
+- division
+- modulus
+- expoenentail
+- increment(++) :- increment will happen with one value
+    - pre-increment :- increment before execution
+    - post-increment :- increment after execution
+- decrement(--) :- decrmenrted by 1
+    - pre-decrement
+    - post-decrement
+
+concatenation :- adding two or more strings.
+typecasting :- converting one datatype into another datatype.
+NaN :- Not a Number :- 
+
+2.assignment operator:-
+- = , += , -= , *= ,/= , %= , **=
+
+3.relational operator
+- which are used to compare two values.
+- == , === , != , !== , > , >= , < , <=
+- returns always a boolean.
+what is the difference between "==" and "==="?
+-"==" - it will check only values not a data type.
+-"===" - it will check both values and data types.
+- "!=" - similar to == it will check only values not a data types
+- "!==" - checks both value and data types.
+
+4.Logical operators:-
+AND(&&)- when both sides condition is true then it will return true else false.
+OR(||) :- when both side is true or any one side is true it will return true else false.
+NOT(!):- if true it becomes false and vice-versa. 
+
+Decision making statments:-
+****************************
+-if:- it will work for true statments
+- if else
+- else if ladder
+-switch
+- ternary
+
+prompt():- this method is used to collect the data from the users.
