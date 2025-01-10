@@ -1,0 +1,14 @@
+what is return keyword?
+-return keyword 
+
+-explicit return : return keyword writing manually.
+-implicit return : (by default)without using keyword it should return.but it is not possible.
+
+in all functions only explicit is possible.
+Only in arraow function implicit and explicit is possible.
+
+Highr Order function : -any function which accepts another function as an argument.
+CallBack function : the function which is passed as an argument/value to  a higher order functions.
+
+-Closure : Closure is a memory where functions are bundled together/functions are nested each other.
+By giving accessability to the inner most function to access the variables of the outer most function.
