@@ -1,0 +1,16 @@
+Arrays:-
+They can store multiple values within a single variable.
+-collections of items/values.
+-array can store homogenous values and heterogenous values.
+syntax:[]
+
+map and 
+
+
+
+methods in array:-
+push(),pop(); unshift(); shift(); reverse(); join()
+concat()
+
+what is object ?
+-Every object is having the states and behaviour
