@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(0, 0, 161);
+
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        width: 360px;
+        height: 360px;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .left {
+        width: 240px;
+        height: 300px;
+        border: 2px white dashed;
+        margin-right: 10px;
+      }
+      .right {
+        margin-left: 10px;
+        width: 240px;
+        height: 300px;
+        border: 2px white dashed;
+      }
+      .item {
+        width: 90%;
+        height: 60px;
+        margin-bottom: 10px;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="left"
+        ondragover="allowDropOption(event)"
+        ondrop="droppoint(event)"
+      >
+        <div
+          class="item"
+          id="item1"
+          draggable="true"
+          ondragstart="dragpoint(event)"
+        >
+          Item1
+        </div>
+        <div
+          class="item"
+          id="item2"
+          draggable="true"
+          ondragstart="dragpoint(event)"
+        >
+          Item2
+        </div>
+        <div
+          class="item"
+          id="item3"
+          draggable="true"
+          ondragstart="dragpoint(event)"
+        >
+          Item3
+        </div>
+        <div
+          class="item"
+          id="item4"
+          draggable="true"
+          ondragstart="dragpoint(event)"
+        >
+          Item4
+        </div>
+      </div>
+      <div
+        class="right"
+        ondrop="droppoint(event)"
+        ondragover="allowDropOption(event)"
+      ></div>
+    </div>
+    <script>
+      function droppoint(event) {
+        let data = event.dataTransfer.getData("Text");
+        event.target.appendChild(document.getElementById(data));
+        event.preventDefault();
+      }
+      function allowDropOption(event) {
+        event.preventDefault();
+      }
+      function dragpoint(event) {
+        event.dataTransfer.setData("Text", event.target.id);
+      }
+    </script>
+  </body>
+</html>

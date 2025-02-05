@@ -1,0 +1,11 @@
+Modules: import/export statements to your code.
+
+Named Modules : Definetly while 
+
+
+Assignment1
+Create a signup form that contains username(!empty),
+email(@,!empty),
+password(should be 6) and
+confirm password(same as password value,!empty),
+once you click on submit button, a alert should be popped up on screen "form is submitted successfully" if and only if all the validations are correect.

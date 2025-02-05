@@ -1,0 +1,8 @@
+1.var: re-initialization
+       re-declaration both are possible.
+
+2.let: re-initialization is possible. 
+       re-declaration is not possible.
+
+3.const: re-initialization
+         re-declaration both are not possible.

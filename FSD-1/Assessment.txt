@@ -1,0 +1,71 @@
+Give me some idea on what is a Data type. What are Primitive Data types and
+Non-Primitive Data types. Explain with some examples.
+
+Primitive Data Types: These are the basic types that represent a single value:
+
+1.Number: Represents both integer and floating-point numbers.
+Example: 42, 3.14
+Special numeric values include Infinity, -Infinity, and NaN (Not-a-Number).
+
+2.String: Represents textual data.
+Strings are enclosed in single quotes ('), double quotes ("), or backticks (`) for template literals.
+Example: 'Hello', "World", `Hello ${name}`
+
+3.Boolean: Represents logical values: true or false.
+Example: true, false
+
+4.Undefined: Represents a variable that has been declared but not assigned a value.
+Example: let x; // x is undefined
+
+5.Null: Represents the intentional absence of any object value.
+Example: let y = null;
+
+6.Symbol (introduced in ES6): Represents a unique identifier.
+Useful for creating unique object keys.
+Example: let sym = Symbol('description');
+
+7.BigInt (introduced in ES11): Represents integers with arbitrary precision.
+Useful for working with large numbers beyond the safe integer limit of Number.
+Example: let bigIntNum = 123456789012345678901234567890n;
+
+Non-Primitive (Reference) Data Types: These types are more complex and are used to 
+store collections of data and more complex entities:
+
+1.Object: Represents collections of key-value pairs.
+Can include other objects, functions, and primitive values.
+Example:
+javascript
+let person = {
+  name: 'John',
+  age: 30
+};
+
+2.Array: A special type of object used to store ordered lists of values.
+Example: let arr = [1, 2, 3, 4];
+
+3.Function: A callable object that can be executed.
+Functions are objects in JavaScript.
+Example:
+javascript
+function greet(name) {
+  return `Hello, ${name}`;
+}
+
+4.Date: Represents dates and times.
+Example: let now = new Date();
+
+5.RegExp: Represents regular expressions, used for pattern matching within strings.
+Example: let pattern = /abc/;
+
+6.Map: A collection of key-value pairs where keys can be of any data type.
+Example:
+javascript
+let map = new Map();
+map.set('key', 'value');
+
+7.Set: A collection of unique values.
+Example:
+javascript
+let set = new Set();
+set.add(1);
+set.add(2);

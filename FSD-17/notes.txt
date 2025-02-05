@@ -1,0 +1,34 @@
+libraries: it is a collection of codes.
+-less set of rules. Faster 
+-reactjs, 
+
+
+frameworks: it is a collection of libraries.
+-more set of rules. Slower
+-angular, vuejs etc...
+
+Important features of ReactJS:-
+1. ReactJS is Javascript library to build rich reusable user interface.
+2. ReactJS is faster because of "virtual DOM".
+3.React follows component based architecture.
+4.React follows unidirectional data flow.
+5. React follows both client-side rendering and server-side rendering.
+
+-React was introduced in 2011 by facebook.
+-Jordan Walke.
+-At 2013 react made as a open-source.
+-react is a free and platform-independent.
+
+*****to install react app:-*****
+-install nodejs
+-node -v
+-npm install -g create-react-app
+1-npx create-react-app
+(or)
+2-npm -virtual-npm install 
+create-react-app --globally
+-npm init react-app myapp(name of react)
+Note:-The name of the react app should not start with capital letters.
+The name should nt be react itself.
+
+-vite react

@@ -1,0 +1,30 @@
+Asynchronous in javascript:-
+
+- to perform multiple task in javascript.
+
+1.setTimeout():- it is a web api usedto perform async operations at specified timeout.
+syntax:- setTimeout(Callbackfunction, timeout);
+
+2.setInterval():- it is a web api used to perform async operations at certain time interval.
+syntax:- setInterval(Callbackfunction, timeout);
+
+*3.promise:- Promise is an object which represents eventual completion or failure of an asynchronous operation.
+    states of promise:-
+    1.pending state
+    2.fulfilled state
+    3.rejected state
+
+syntax:- let p = new Promise((resolve,reject)=>{});
+
+-the actual way of executing the promise is instance methods.
+        1.then():- it is used to fulfilled state.
+        2.catch():- it is used to execute rejected state.
+        3.finally():-
+*4.async & await
+
+
+
+
+note:- by default, javascript is synchronous.
+
+

@@ -1,0 +1,96 @@
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git
+$ git status
+fatal: detected dubious ownership in repository at 'E:/'
+'E:/' is owned by:
+        NT AUTHORITY/SYSTEM (S-1-5-18)
+but the current user is:
+        DESKTOP-3ONER3J/Poojitha (S-1-5-21-3739837497-706357033-3492069948-1002)
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory E:/
+
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git
+$ git init
+Initialized empty Git repository in E:/training-git/.git/
+
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git add text.txt
+fatal: pathspec 'text.txt' did not match any files
+
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git add text.txt
+
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git remote add origin https://github.com/pooja-ch-132/training.git
+
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/pooja-ch-132/training.git'
+
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/pooja-ch-132/training.git'
+
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git remote add origin https://github.com/pooja-ch-132/training.git
+error: remote origin already exists.
+
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/pooja-ch-132/training.git'
+
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   text.txt
+
+
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git add .
+
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git commit -m "This is a text message"
+[master (root-commit) 07c2aa1] This is a text message
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 text.txt
+
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git remote add origin https://github.com/pooja-ch-132/training.git
+error: remote origin already exists.
+
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 225 bytes | 112.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/pooja-ch-132/training.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git commit -m "This is a text message"Poojitha@DESKTOP-3ONER3J MINGW64 /e/training-git (master)
+$ git push -u origin master
+branch 'master' set up to track 'origin/master'.
+Everything up-to-date
+

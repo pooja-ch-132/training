@@ -1,0 +1,25 @@
+async:- async keyword is uded to convert synchronous function into asynchronous function and start to execute the 
+
+await:- await keyword is used to make the function to wait untill the promise completes.
+
+notes:- by default, javascript is synchronous.
+
+DOM:-
+-DOM stands for documnet object model.
+-DOM is used to add, remove, update to content in the html document.
+-DOM is used to manipulate the content in the html document.
+
+DOM Methods:-
+1.documnet.getElementById(""):- It is used to select the html element  based on "id attribute" value.
+                               -id attribute should be unique / it should be used with only one element.
+1.documnet.getElementByTagName(""):- It is used to select the html element  based on "class attribute" value.
+                                     -class attribute is used with multiple common element.
+1.documnet.getElementByName(""); It is used to select the html element  based on "name attribute" value.
+1.documnet.querySelector("");
+1.documnet.querySelectorAll("");
+
+
+
+
+
+-DOM Methods,DOM Events, 

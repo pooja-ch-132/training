@@ -1,0 +1,82 @@
+
+JSON :- Javascript object notation.
+- JSON is a lightweight technique of javascript used to transfer data/information from
+        client to server and vice-versa.
+        - except number it will store bot key and value pair inside the double quotes.
+
+- JSON is always in the form of "string".
+
+
+methods of json:-
+1.JSON.stringfy() :- it is used to convert Javascript object into JSON object.
+2.JSON.parse() :- it is used to convert JSON object into Javascript object.
+
+
+Asynchrnous in javascript:-
+***************************
+- to perform multiple task in javascript.
+
+1.setTimeout() :- it is a web api used to perform async operations at specified timeout.
+syntax :-  setTimeout(Callbackfn , timeout);
+
+2.setInterval():- it is a web api used to perform async operations at certain time interval.
+syntax :-  setInterval(Callbackfn , timeout);
+
+
+3.promise :- Promise is an object which represents eventual completion or failures of an async operations.
+
+    states of promise:-
+    1.pending state
+    2.fulfilled state
+    3.rejected state
+
+syntax :-  let p =  new Promise((resolve , reject)=>{});
+
+- the actual way of executing the promise is instance methods,
+        1.then() :- it is used to execute fulfilled state
+        2.catch() :- it is used to execute rejected state
+        3.finally() :- once promise is settled it will print the value.
+
+4.async & await:-
+*****************
+async:- async keyword is used to convert synchronous function into asynchronous function and start to execute the promise.
+
+await:- await keyword is used to make the function to wait untill the promise completes.
+
+
+note :- by default , javascript is synchronous(single threaded).
+
+
+DOM:-
+*****
+- DOM stands for document object model.
+- DOM is used to add , remove , update to content in the html document.
+- DOM is used to manipulate the content in the html document.
+
+DOM methods:-
+*************
+1.document.getElementById("demo"):-It is used to select the html element based on "id attribute" value.
+                              -id attribute should be unique / it should be used with only one element.
+
+2.document.getElementsByClassName(""):-It is used to select the html element based on "class attribute" value.
+                                      - class attribute can be used with multiple elements with common value.
+
+3.document.getElementsByTagName(""):- it is used select html element based on tag names.
+
+4.document.getElementsByName("") :-it is used to select html element based on "name attribute" value.
+
+- these below methods selects the html elements based on css selectors.
+5.document.querySelector("#id"):- it selects only one element.
+6.document.querySelectorAll(".class"):- it will selects multiple elements.
+
+innerText :- it is a property used to manipulate / add just plain text.
+innerHTML :- it is a property used to add /remove the content along with tags.
+
+Events in DOM:-
+***************
+- Events are nothing but actions performed on html elements.
+- events are of click events , mouse events , key events.
+
+click events :- onclick , ondblclick , onsubmit , onchange
+mouse events :- mouseover , mouseleave
+keyevents:- keydown , keyup , keypress(depricated).

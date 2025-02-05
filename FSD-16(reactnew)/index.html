@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+      .container {
+        width: 350px;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .error {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        border: none;
+        background-color: #28a745;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Register</h2>
+      <form id="myForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" />
+        <div class="error" id="usernameError"></div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <div class="error" id="emailError"></div>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <div class="error" id="passwordError"></div>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" />
+        <div class="error" id="confirmPasswordError"></div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          let isValid = true;
+
+          let username = document.getElementById("username").value;
+          let email = document.getElementById("email").value;
+          let password = document.getElementById("password").value;
+          let confirmPassword =
+            document.getElementById("confirmPassword").value;
+
+          document.getElementById("usernameError").innerText = "";
+          document.getElementById("emailError").innerText = "";
+          document.getElementById("passwordError").innerText = "";
+          document.getElementById("confirmPasswordError").innerText = "";
+
+          if (username.trim() === "") {
+            document.getElementById("usernameError").innerText =
+              "Username is required";
+            isValid = false;
+          }
+
+          if (email.trim() === "" || !email.includes("@")) {
+            document.getElementById("emailError").innerText =
+              "Valid email is required";
+            isValid = false;
+          }
+
+          if (password.length < 6) {
+            document.getElementById("passwordError").innerText =
+              "Password must be at least 6 characters";
+            isValid = false;
+          }
+
+          if (password !== confirmPassword) {
+            document.getElementById("confirmPasswordError").innerText =
+              "Passwords do not match";
+            isValid = false;
+          }
+
+          if (isValid) {
+            alert("Form submitted successfully!");
+          }
+        });
+    </script>
+  </body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="hello"></h1>
+    <script>
+      document.getElementById("hello").innerHTML = "<h2>nfkn<h2>";
+    </script> -->
+<!-- <script type="module" src="script1.js"></script>
+    <script type="module" src="script2.js"></script>
+  </body>
+</html>  -->

@@ -1,0 +1,134 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f1dc;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffcc4d; /* Updated to yellow */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.nav-bar ul li a:hover {
+  color: #d63031;
+}
+
+.contact-info p {
+  font-size: 12px;
+  text-align: right;
+  color: #555;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background-color: #ffcc4d;
+  padding-top: 70px; /* Adjust for fixed header */
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.promo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.promo-image img {
+  width: 400px; /* Increased size */
+  border-radius: 10px;
+}
+
+.promo-price {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.promo-price p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d63031;
+}
+
+.promo-price span {
+  font-size: 2.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .promo {
+    flex-direction: column;
+  }
+
+  .promo-image img {
+    width: 300px;
+  }
+}

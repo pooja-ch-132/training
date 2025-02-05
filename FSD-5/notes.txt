@@ -1,14 +1,129 @@
-what is return keyword?
--return keyword 
+operators:-
+***********
+- operators are spacial type of symbols used to perform some operations
+on operands.
 
--explicit return : return keyword writing manually.
--implicit return : (by default)without using keyword it should return.but it is not possible.
+ex: -  2(operand1)*(symbol)3(operand2)
 
-in all functions only explicit is possible.
-Only in arraow function implicit and explicit is possible.
+- unary 
+- binary
+- ternary
 
-Highr Order function : -any function which accepts another function as an argument.
-CallBack function : the function which is passed as an argument/value to  a higher order functions.
+1. arithmatic operator:-
+**************************
++ , - , * , / , % ,** , ++ , --
+concatenation :- joinign of two or more string
+typecasting:- changing one data type into another dattype.
+NaN :- Not a number :- it is a specail type of number which is not leagl in javascript.
+ 
 
--Closure : Closure is a memory where functions are bundled together/functions are nested each other.
-By giving accessability to the inner most function to access the variables of the outer most function.
+ increment :- 
+        1.pre-increment :- it will increment the value by one before execution
+        2.post-increment :- it will increment the value by one after executuion.
+
+assignment operator:-
+= , += , -= , /= , %= , *= 
+let a =10;
+clg(a+5)
+
+relational operators:-
+***********************
+- relational operators always return boolean values.
+== , === , != , !==(strictly not equals) , > , >= , < , <=
+
+what is different between "==" & "===" ?(FAQ)
+- "==" it will check only the values not the datatypes.
+- "===" it will check both values and datatypes.
+
+
+logical operators:-
+*******************
+ AND(&&) - it will return true only when both side conditions are true else return false
+ OR(||) - it will return true when both side is true as well as anyone side is true else false.
+ NOT(!) - it will make true as falsa and false as true.
+
+ decision making statements:-
+ ****************************
+ if :- if block will execute only when the condition is true.
+ - we can give only one condition for if 
+ if-else :- if we ewant to display either of true / false we use if else block.
+ - this also works with one condition.
+ else if ladder
+ switch
+ ternery condition
+
+ looping statements:-
+ *********************
+- looping statements are used to iterate the block of codes multiple times.
+ 1.for loop :- 
+ -minimum iteration count of forloop is "0".
+ syntax :-  for(initialization ; condition; updation)
+                        {
+                                //statemets
+                        }
+ 2.while loop
+ - minimum iteration count of while loop is "0".
+ syntax :-  while(condition){
+                        //statement
+                        updation
+                }
+ 3.do-while loop
+ - minimum iteration count of d-while lool is "1".
+ synatx :- do{
+                //statements
+                }while(condition)
+
+- what are the entry controlled loop and exit controlled loop?
+- for loop & while loops are entry controlled loops.
+- do-while is a exit controlled loop.
+
+
+functions:-
+***********
+- function is a block of code used to perform specific task.
+- functions can be reuse for n number of times.
+- functions are non-primitive data types.
+
+syntax :- function function_name(optional parameters) // function declatration
+                {
+                      //statements  
+                }
+                function_name(arguments);//function calling/invoking
+
+note :- without calling the function the function body will never execute.
+
+types of functions:-
+********************
+1.named function :- function which is having a name to decalre and to invoke(calling).
+2.anonymus function:-function which doesnot have a name for declare.
+- anonymus function cannot be executed independently.
+3.function expression:- function decalration is assigned as a value to variable 
+        and the same function will be invoked with the help of variable.
+4.immediate invoke function expression(IIFE):- once the function is created immedialtely it should be invoked.
+        - iife can be executed for only one time.
+5.Arrow function:- to concise the syntax of normal function.
+synatx :-  ()=>{};
+- it is also similar to anonymus function.
+
+6.higher order function:-
+- higher order function is a function which accepts another function as a 
+value/argument to its parameter and returns a functions as a output.
+
+7.callback function:-
+- callback function is a function which is passed as a value/argumnets to 
+another function.
+
+-closure :- closure is a memory created when functions bundled together/functions nested each other
+        by giving accessibility to the innermost function to access the variables of outermost function.
+ - closure is a memory which gives accessibility to access the variables of outermost function from innermost function.
+
+Note:- current version of javascript - es14.
+es - ECMA script 
+ECMA - european computer manufacturing association
+
+return statement:-
+- it will return either expression or variables to future use.
+
+implicit return :- returns without using a "return" keyword manually.
+
+explicit return :- returns using "return" keyword manually

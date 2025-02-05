@@ -1,0 +1,5 @@
+Assignment:1
+Take a array of employee object where each object contains properties such as empId, empName, empCompany, empSalary, and empAddress where empAddress is further having 2 more properties of object such as empCity, empArea.
+
+Print These properties in the form of a table on the UI by using javascript.
+

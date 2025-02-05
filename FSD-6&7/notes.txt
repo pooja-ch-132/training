@@ -1,0 +1,77 @@
+Arrays:-
+They can store multiple values within a single variable.
+-collections of items/values.
+-array can store homogenous values and heterogenous values.
+syntax:[]
+
+map and 
+
+
+
+methods in array:-
+push(),pop(); unshift(); shift(); reverse(); join()
+concat()
+
+what is object ?
+-Every object is having the states and behaviour
+
+
+
+Arrays:- 
+********
+- Array can store mulitple values within a single variable.
+- collections of items / values.
+- array can store homogenous values and heterogenous values.
+syntax :-  [] 
+
+ex :-  
+
+
+map and forEach difference
+map:- it is used to iterrate the values of an array one by one.
+- it will return new Array from original array.
+
+forEach :- it is sued to iterate the values of an array.
+- if we return the value we will get "undefined".
+
+methods in array:-
+******************
+push() , pop() , unshift() , shift() , reverse() , join()
+concat()
+
+what is object ?
+- object is an entity which is used to store the values in the form of key &value pairs.
+- Object is a physical entity which is having states(properties) and behaviours(method or functionalities).
+
+syntax :-  let obj = {};
+
+notes: - Object based language  + OOPs
+
+ex:-    let obj ={
+                name:"Sam",
+                age:25
+                }
+
+JSON :- Javascript object notation
+- IT is used to transmit the data from client to server and server to client.
+
+syntax :-  {
+                "key":"value"
+        }
+
+-json is always in the form "string"
+- for json no need to store it inside variable
+- both keys and values shoyuld be double quoted only except number.
+
+ex:- {
+    "name":"Sam",
+    "age":25
+}
+
+extension for json file is ".json"
+
+
+methods of json:-
+Json.stringify():it is used to convert javascript object to json object.
+Json.parse():it is used to convert json object to javascript object .
+

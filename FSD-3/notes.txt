@@ -1,0 +1,30 @@
+Loops:- to execute the block of the codes repeatedly.
+
+for loop:-
+-will be used when the exact iteration count is known.
+syntax:- for(initialization ; condition ; updation){
+    //statements
+}
+minimum iteration count of for loop is "0".
+
+
+while:-
+will be used when we don't know the  iteration count.The statement 
+is printed only when the conditon is true.
+syntax:- while(condition){
+    //statements
+}
+minimum iteration count of while loop is "0".
+
+
+
+do-while:-
+will be used when we don't know the iteration count.
+minimum iteration count of do-while loop is "1".
+syntax:- do{
+    //statements
+}while(condition)
+
+What are entry controlled and exit controlled loops.
+-entry controlled loops are for and while loop.
+-exit controlled loops are do-while loop.

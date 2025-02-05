@@ -1,0 +1,10 @@
+
+
+dynamic creation of html element from javascript:-
+**************************************************
+- to create dynamic element in javascript we have a method called as "document.createElement()".
+- to create an attributes we have a method called as "setAtttribute()".
+- to remove attribute we have "removeAttribute()".
+
+- any element which is created in javascript will not add directly to document, we have to add it 
+manually by using a method called "appendChild()".
